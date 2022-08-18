@@ -34,7 +34,6 @@ const Boutique = props => {
             .then(res => res.json())
             .then(json => setCategories(json))
     }, [category])
-    console.log(categories)
     return (
         <DefaultLayaout>
             <Container maxWidth="lg" className={classes.root}>

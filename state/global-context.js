@@ -50,7 +50,6 @@ export class GlobalProvider extends Component {
 
             if (typeof callback !== 'undefined') callback();
         });
-        console.log(this.state.wishlist)
     }
 
     removeProductToCart(id, callback) {

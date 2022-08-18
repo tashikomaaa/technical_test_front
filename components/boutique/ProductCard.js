@@ -42,7 +42,6 @@ const useStyles = theme => ({
 const ProductCard = (props) => {
     const { classes, product } = props
     const context = useContext(GlobalContext);
-    console.log(context.wishlist)
     const handleAddToCart = (e, product) => {
         context.addProductToCart(product, context.pushObject('open_interstitial', true))
     }
@@ -53,7 +52,6 @@ const ProductCard = (props) => {
     const handleremoveProductToWishlist = (e, product) => {
         context.removeProductToWishlist(product.id)
     }
-console.log(product, context.wishlist.includes(product))
     return (
         <Card className={classes.root}>
             <CardContent className={classes.content}>
